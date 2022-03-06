@@ -1,0 +1,307 @@
+<html>
+    <head>
+        <title>
+QUIZ-1
+        </title>
+        <link rel="stylesheet" href="../CSS/CQuiz1.css">
+    </head>
+    <body>
+        <div class="container">
+
+
+            <div class="card">
+                <div class="imgBx">
+                    Predict the output of following program? <br>
+                    #include&lt;stdio.h&gt;<br>
+                    { 
+                        char arr[100];
+                        printf(&quot;%d&quot;,scanf(&quot;%s&quot;,arr));<br>
+                        /* Suppose that input value given <br>
+		                for above scanf is &quot;Hello World&quot; */
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn1" onclick="ChangeColor1()">9</button><br>
+                       <button type="button" class="btn" id="btn2" onclick="ChangeColor1()">1</button><br>
+                       <button type="button" class="btn" id="btn3" onclick="ChangeColor1()">10</button><br>
+                       <button type="button" class="btn" id="btn4" onclick="ChangeColor1()">100</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    Predict output of the following program. <br>
+                    #include&lt;stdio.h&gt;<br>
+                    {
+                        printf(&quot;new_c_questionby&quot;);<br>
+                        printf(&quot;rhelloworld&quot;);<br>
+                        getchar();<br>
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn box2" id="btn5" onclick="ChangeColor2()">ew_c_question<br>helloworld</button><br>
+                       <button type="button" class="btn box2" id="btn6" onclick="ChangeColor2()">new_c_ques<br>helloworld</button><br>
+                       <button type="button" class="btn box2" id="btn7" onclick="ChangeColor2()">helloworld</button><br>
+                       <button type="button" class="btn box2" id="btn8" onclick="ChangeColor2()">Depends on terminal configuration</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    #include&lt;stdio.h&gt;<br>
+                    {
+                        printf(&quot;&quot;ATH %% SO %% VIN&quot;&quot;);<br>
+                        getchar();<br>
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn9" onclick="ChangeColor3()">&quot;ATH % SO % VIN&quot;</button><br>
+                       <button type="button" class="btn" id="btn10" onclick="ChangeColor3()">ATH % SO % VIN</button><br>
+                       <button type="button" class="btn" id="btn11" onclick="ChangeColor3()">\&quot;ATH %% So %% VIN\&quot;</button><br>
+                       <button type="button" class="btn" id="btn12" onclick="ChangeColor3()">ATH %% SO %% VIN</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    #include&lt;stdio.h&gt;<br>
+                    // Assume base address of "ATHSOVIN" to be 1000 <br>
+                    {
+                        printf(5 + &quot;ATHSOVIN&quot;);<br>
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn13" onclick="ChangeColor4()">ATHSOVIN</button><br>
+                       <button type="button" class="btn" id="btn14" onclick="ChangeColor4()">VIN</button><br>
+                       <button type="button" class="btn" id="btn15" onclick="ChangeColor4()">1005</button><br>
+                       <button type="button" class="btn" id="btn16" onclick="ChangeColor4()">Compile-time error</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    Predict the output of the below program: <br>
+                    #include&lt;stdio.h&gt;<br>
+                    int main() <br>
+                    {
+                        printf(&quot;%c&quot;,5[&quot;ATHSOVIN&quot;]);<br>
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn17" onclick="ChangeColor5()">Compile-time error</button><br>
+                       <button type="button" class="btn" id="btn18" onclick="ChangeColor5()">Runtime error</button><br>
+                       <button type="button" class="btn" id="btn19" onclick="ChangeColor5()">V</button><br>
+                       <button type="button" class="btn" id="btn20" onclick="ChangeColor5()">O</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    Predict the output of below program: <br>
+                    #include&lt;stdio.h&gt;<br>
+                    int main() <br>
+                    {
+                        printf(&quot;%c&quot;,&quot;ATHSOVIN&quot;[5]);<br>
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn21" onclick="ChangeColor6()">Compile-time error</button><br>
+                       <button type="button" class="btn" id="btn22" onclick="ChangeColor6()">Runtime error</button><br>
+                       <button type="button" class="btn" id="btn23" onclick="ChangeColor6()">V</button><br>
+                       <button type="button" class="btn" id="btn24" onclick="ChangeColor6()">O</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    What does the following C statement mean?<br>
+                    scanf(&quot;%4s&quot;, str);
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn box7" id="btn25" onclick="ChangeColor7()">Read exactly 4 characters from console.</button><br>
+                       <button type="button" class="btn box7" id="btn26" onclick="ChangeColor7()">Read maximum 4 characters from console.</button><br>
+                       <button type="button" class="btn box7" id="btn27" onclick="ChangeColor7()">Read a string str in multiples of 4</button><br>
+                       <button type="button" class="btn box7" id="btn28" onclick="ChangeColor7()">Nothing</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    #include&lt;stdio.h&gt;<br>
+                    int main() <br>
+                    {
+                        char *s = &quot;ATHSOVIN3&quot;;<br>
+                        int n = 7;<br>
+                        printf(&quot;%.*s&quot;,n,s);<br>
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn29" onclick="ChangeColor8()">ATHSOVIN3</button><br>
+                       <button type="button" class="btn" id="btn30" onclick="ChangeColor8()">Nothing is Printed</button><br>
+                       <button type="button" class="btn" id="btn31" onclick="ChangeColor8()">ATHSOVIN</button><br>
+                       <button type="button" class="btn" id="btn32" onclick="ChangeColor8()">ATHSOVI</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    #include&lt;stdio.h&gt;<br>
+                    int main(void) <br>
+                    {
+                        int x = printf(&quot;ATHSOVIN&quot;);<br>
+                        printf(&quot;%d&quot;,x);
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn33" onclick="ChangeColor9()">ATHSOVIN8</button><br>
+                       <button type="button" class="btn" id="btn34" onclick="ChangeColor9()">ATHSOVIN9</button><br>
+                       <button type="button" class="btn" id="btn35" onclick="ChangeColor9()">ATHSOVINATHSOVIN</button><br>
+                       <button type="button" class="btn" id="btn36" onclick="ChangeColor9()">ATHSOVIN1</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    #include&lt;stdio.h&gt;<br>
+                    int main() <br>
+                    {
+                        printf(&quot;%d&quot;,printf(&quot;%d&quot;,1234));<br>
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn37" onclick="ChangeColor10()">41234</button><br>
+                       <button type="button" class="btn" id="btn38" onclick="ChangeColor10()">12341</button><br>
+                       <button type="button" class="btn" id="btn39" onclick="ChangeColor10()">11234</button><br>
+                       <button type="button" class="btn" id="btn40" onclick="ChangeColor10()">12344</button>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="imgBx">
+                    What is the return type of getchar()?
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn41" onclick="ChangeColor11()">char</button><br>
+                       <button type="button" class="btn" id="btn42" onclick="ChangeColor11()">int</button><br>
+                       <button type="button" class="btn" id="btn43" onclick="ChangeColor11()">unsigned char</button><br>
+                       <button type="button" class="btn" id="btn44" onclick="ChangeColor11()">float</button>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="imgBx">
+                    What is the value returned by the function f given below when n = 100? int f (int n) { if (n = = 0) then return n; else return n + f(n-2); }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn45" onclick="ChangeColor12()">2550</button><br>
+                       <button type="button" class="btn" id="btn46" onclick="ChangeColor12()">2556</button><br>
+                       <button type="button" class="btn" id="btn47" onclick="ChangeColor12()">5220</button><br>
+                       <button type="button" class="btn" id="btn48" onclick="ChangeColor12()">5520</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    What will be the output of the following ‘C’ code? <br>
+                    main () <br>
+                    {<br>
+                        int x = 128;<br>
+                        printf (&quot;n%d&quot;, 1+ x ++);<br>
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn49" onclick="ChangeColor13()">128</button><br>
+                       <button type="button" class="btn" id="btn50" onclick="ChangeColor13()">130</button><br>
+                       <button type="button" class="btn" id="btn51" onclick="ChangeColor13()">129</button><br>
+                       <button type="button" class="btn" id="btn52" onclick="ChangeColor13()">131</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    Which of the following functions from &lt;stdio.h&gt; can be used in place of printf()?
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn53" onclick="ChangeColor14()">fputs() with FILE stream as stdout</button><br>
+                       <button type="button" class="btn" id="btn54" onclick="ChangeColor14()">fprintf() with FILE stream as stdout</button><br>
+                       <button type="button" class="btn" id="btn55" onclick="ChangeColor14()">fwrite() with FILE stream as stdout.</button><br>
+                       <button type="button" class="btn" id="btn56" onclick="ChangeColor14()">All of the above three - a, b and c</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    #include&lt;stdio.h&gt;<br>
+                    struct Ournode{
+                        char x,y,z;
+                    };<br>
+                    int main(){
+                        struct Ournode p={'1','0','a'+2};<br>
+                        struct Ournode *q=&amp;p;<br>
+                        printf(&quot;%c,%c&quot;*((char *)q+1),*((char *)q+2));<br>
+                        return 0;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn57" onclick="ChangeColor15()">0 , c</button><br>
+                       <button type="button" class="btn" id="btn58" onclick="ChangeColor15()">0 , a + 2</button><br>
+                       <button type="button" class="btn" id="btn59" onclick="ChangeColor15()">'0' , 'a+2'</button><br>
+                       <button type="button" class="btn" id="btn60" onclick="ChangeColor15()">'0' , 'c'</button>
+                    </p>
+                </div>
+            </div>
+
+            <script src="../JS/CQuiz.js"></script>
+        </div>
+        
+    </body>
+</html>

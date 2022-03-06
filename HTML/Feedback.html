@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+   
+    
+    <link rel="stylesheet" href="../CSS/Feedback.css">
+</head>
+
+<body>
+    <nav class="navbar" id="nav">
+        
+        <div class="nav-items">
+            <img src="../IMAGES/athsovin (300px).png" alt="" class="athsovin">
+            <div class="item-list">
+                <div class="icons">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <a href="../HTML/Menu.html"><span>Home</span></a>
+            </div>
+            <div class="item-list">
+                <div class="icons">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+               <a href="../HTML/Flashcards.html"><span>Flashcards</span></a>
+            </div>
+            <div class="item-list">
+                <div class="icons">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <a href="../HTML/Quiz.html"><span>Quiz</span></a>
+            </div>
+            <div class="item-list">
+                <div class="icons">
+                    <i class="far fa-comment-dots"></i>
+                </div>
+                <a href="../HTML/Feedback.html"><span>Feedback</span></a>
+            </div>
+            <div class="item-list">
+                <div class="icons">
+                    <i class="fas fa-users"></i>
+                </div>
+                <a href="../HTML/Aboutus.html"><span>About Us</span></a>
+            </div>
+            
+           
+        </div>
+    </nav>
+
+    <div class="navbar" id="nav1">
+        <div>
+
+        <form class="contact3-form" name="form2" onSubmit="return validateForm()" required >
+            <span class="feedback">
+                Feedback
+            </span>
+
+            <div class="wrap-input3">
+                <input class="input3" type="text" name="fname" placeholder="Name">
+                
+            </div>
+
+            <div class="wrap-input3">
+                <input class="input3" type="email" name="email" placeholder="Email">
+                
+            </div>
+            
+            <div class="wrap-input3">
+                <input class="input3" type="text" name="topic" placeholder="Suggestion Topic">
+               
+            </div>
+
+            <div class="wrap-input3">
+                <textarea class="input3" name="describetopic" placeholder="Describe Your Topic"></textarea>
+                <span class="focus-input3"></span>
+            </div>
+
+            <div class="container-contact3-form-btn" align = "center">
+                <input class="btn" type="submit" value="SUBMIT" onClick="function validateForm()">
+                
+            </div>
+        </form>
+    </div>
+
+    </div>
+<script src="..//JS/Feedback.js"></script>
+</body>
+</html>

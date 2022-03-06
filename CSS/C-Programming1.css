@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#0f0c29, #302b63, #24243e);
+  background-attachment: fixed;
+}
+
+.container
+{
+  position: relative;
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.container .card
+{
+  position:relative;
+  width: 300px;
+  height: 420px;
+  background: #ffffff;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba( 0, 0, 0, 0.2);
+  transition: 0.5s;
+ 
+}
+
+
+.container .card .circle
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient( #FCF6BA, #B38728, #FBF5B7);
+  clip-path: circle(160px at center 0);
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container .card .circle h2
+{
+  color: #ffffff;
+  font-size: 4.5em;
+  padding: 30px 0;
+}
+
+.questions
+{
+  color: #302b63;
+  text-align: center;
+  padding: auto;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.answers
+{
+  text-align: center;
+}
+
+p
+{
+  position: absolute;
+  color: red;
+  display: none;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.btn
+{
+  position: absolute;
+  bottom: 20px;
+  left: 85px;
+  width: 130px;
+  height: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #FBF5B7;
+  background: #24243e;
+  border: none;
+  border-radius: 40px;
+  box-shadow: -3px -3px 5px #ffffff,3px 3px 15px #000000;
+ 
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover{
+  background-color :#B38728;
+  box-shadow: 0px 15px 20px #B38728;
+  color: #0f0c29;
+  transform: translate3d(-15px)
+}
+
+.container:hover .card
+{
+  filter: blur(20px);
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+.container .card:hover
+{
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
+ 
+
+/*
+.card_back{
+  
+  background: blue;
+}
+

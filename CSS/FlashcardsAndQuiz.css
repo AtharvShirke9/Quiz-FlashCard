@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.4s;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+    background-image: url(../IMAGES/image3.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+    overflow: hidden;
+	
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 90vh;
+    background-color: #ffffff40;
+    backdrop-filter: blur(20px);
+    border: 2px solid #ffffff30;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px -5px #00000030;
+    padding: 15px;
+}
+
+.toggle-menu {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.toggle-menu i {
+    color: #81305d;
+    font-size: 2.5em;
+}
+
+.nav-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 65vh;
+}
+
+.item-list
+{
+    padding: 10px 0 10px 0;
+}
+
+.admin-profile,
+.item-list,
+.logout {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.item-list:hover,
+.logout:hover {
+    background-color: #ffffff60;
+}
+
+.admin-profile {
+    margin: 40px 0;
+    background-color: #ffffff70;
+}
+
+.logout {
+    margin-top: 30px;
+}
+
+.icons {
+    width: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.icons i {
+    font-size: 2em;
+    color: #81305d;
+}
+
+span {
+    display: flex;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #81305d;
+    margin-left: 10px;
+}
+
+
+
+a
+{
+    text-decoration:none ;
+}
+.container1
+{
+    position: absolute;
+    width: 1100px;
+    top: 72px;
+    right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container2
+{
+    position: absolute;
+    width: 1100px;
+    top: 415px;
+    right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card
+{
+    position: relative;
+    max-width: 200px;
+    height: 115px;
+    background-image: url(../IMAGES/image3.jpg);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover
+{
+    height: 220px;
+}
+
+.imgBx
+{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    top:-70px;
+    left:5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#img2
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -30px;
+    transition-delay: 0.3s;
+}
+p
+{
+    font-size: 18px;
+}
+.C-Programming
+{
+    position: absolute;
+    right: 798px;
+    top: 15px;
+    color: #153084;
+    font-size: 50px;
+}
+
+.Html
+{
+    position: absolute;
+    right: 1065px;
+    bottom: 305px;
+    color: #522B83;
+    font-size: 50px;
+}
+
+.btn
+{
+    position: absolute;
+    bottom: -40px;
+    left: 40px;
+    width: 93px;
+    height: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    background:linear-gradient( #FCF6BA, #B38728, #FBF5B7);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.athsovin
+
+{
+    height: 231px;
+    border-radius: 20px;
+}

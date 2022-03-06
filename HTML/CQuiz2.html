@@ -1,0 +1,328 @@
+<html>
+    <head>
+        <title>
+            QUIZ-2
+        </title>
+        <link rel="stylesheet" href="../CSS/CQuiz2.css">
+    </head>
+    <body>
+        <div class="container">
+
+
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    Suppose a C program has floating constant 1.414, what's the best way to convert this as "float" data type? 
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn41" onclick="ChangeColor11()">float(1.414)</button><br>
+                       <button type="button" class="btn" id="btn42" onclick="ChangeColor11()">1.414f or 1.414F</button><br>
+                       <button type="button" class="btn" id="btn43" onclick="ChangeColor11()">1.414 itself of "float" data type</button><br>
+                       <button type="button" class="btn" id="btn44" onclick="ChangeColor11()">(float)1.414</button>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="imgBx que1">
+                    #include &lt;stdio.h&gt;<br>
+
+                        int main() <br>
+                        {
+                            int arr[5];<br>
+                            
+                            // Assume that base address of arr is 2000 and size of integer <br>
+                                // is 32 bit <br>
+                            arr++; <br>
+                            printf(&quot;%u&quot;, arr); <br>
+                            
+                            return 0;
+                        }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn45" onclick="ChangeColor12()">lvalue required</button><br>
+                       <button type="button" class="btn" id="btn46" onclick="ChangeColor12()">2020</button><br>
+                       <button type="button" class="btn" id="btn47" onclick="ChangeColor12()">2004</button><br>
+                       <button type="button" class="btn" id="btn48" onclick="ChangeColor12()">2002</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    Predict the output of below program:
+                    #include &lt;stdio.h&gt;<br>
+                     
+                    int main() <br>
+                    {
+                        int arr[5]; <br>
+                        // Assume base address of arr is 2000 and size of integer is 32 bit <br>
+                        printf("%u %u", arr + 1, &arr + 1); <br>
+                     
+                        return 0;
+                    } 
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn49" onclick="ChangeColor13()">2004 Garbage value</button><br>
+                       <button type="button" class="btn" id="btn50" onclick="ChangeColor13()">2004 2004</button><br>
+                       <button type="button" class="btn" id="btn51" onclick="ChangeColor13()">2004 2020</button><br>
+                       <button type="button" class="btn" id="btn52" onclick="ChangeColor13()">Garbage value</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx que2">
+            
+                    #include &lt;stdio.h&gt;<br>
+ 
+                        void print(int arr[]) <br>
+                        {
+                            int n = sizeof(arr)/sizeof(arr[0]),i; <br>
+                                
+                        for (i = 0; i &lt; n; i++) <br>
+                        printf(&quot;%d &quot;, arr[i]); 
+                            }  <br>
+                    
+                    int main() <br>
+                    {
+                    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8}; <br>
+                    print(arr); 
+                    return 0;
+                    }   
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn53" onclick="ChangeColor14()">1, 2, 3, 4, 5, 6, 7, 8</button><br>
+                       <button type="button" class="btn" id="btn54" onclick="ChangeColor14()">1 2</button><br>
+                       <button type="button" class="btn" id="btn55" onclick="ChangeColor14()">Compiler Error</button><br>
+                       <button type="button" class="btn" id="btn56" onclick="ChangeColor14()">Run Time Error</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    Output of following program?
+                    #include &lt;stdio.h&gt;<br> 
+                       
+                    int main() <br>
+                    { 
+                      int a[] = {1, 2, 3, 4, 5, 6};  <br>
+                      int *ptr = (int*)(&a+1);  <br>
+                      printf(&quot;%d &quot;, *(ptr-1) );  <br>
+                      return 0; 
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn57" onclick="ChangeColor15()">6</button><br>
+                       <button type="button" class="btn" id="btn58" onclick="ChangeColor15()">2</button><br>
+                       <button type="button" class="btn" id="btn59" onclick="ChangeColor15()">1</button><br>
+                       <button type="button" class="btn" id="btn60" onclick="ChangeColor15()">Runtime Error</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    What is the output of the below code snippet? <br>
+                    #include&lt;stdio.h&gt;<br>
+                    main() <br>
+                    { 
+                        unsigned x = 5, y=&x, *p = y+0; 
+                        printf(&quot;%u&quot;,*p);
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn1" onclick="ChangeColor1()">Address of x</button><br>
+                       <button type="button" class="btn" id="btn2" onclick="ChangeColor1()">5</button><br>
+                       <button type="button" class="btn" id="btn3" onclick="ChangeColor1()">Address of y</button><br>
+                       <button type="button" class="btn" id="btn4" onclick="ChangeColor1()">Address of p</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    What is the output of the following program? <br>
+                    #include&lt;stdio.h&gt;<br>
+                    main() <br>
+                    {
+                        int x = 65, *p = &x ;<br>
+                        void *q=p;<br>
+                        char *r=q;<br>
+                        printf(&quot;%c&quot;,*r);
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn5" onclick="ChangeColor2()">Garbage character.</button><br>
+                       <button type="button" class="btn" id="btn6" onclick="ChangeColor2()">65</button><br>
+                       <button type="button" class="btn" id="btn7" onclick="ChangeColor2()">Compile error</button><br>
+                       <button type="button" class="btn" id="btn8" onclick="ChangeColor2()"> A</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    Special symbol permitted with in the identifier name.
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn9" onclick="ChangeColor3()">&quot;_</button><br>
+                       <button type="button" class="btn" id="btn10" onclick="ChangeColor3()">$</button><br>
+                       <button type="button" class="btn" id="btn11" onclick="ChangeColor3()">@</button><br>
+                       <button type="button" class="btn" id="btn12" onclick="ChangeColor3()">.</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    What is the output of the following statement?
+                    #include&lt;stdio.h&gt;<br>
+                    main()
+                    {
+                        printf(&quot;%d&quot;, !0 &lt; 2 ) ;
+                    }
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn13" onclick="ChangeColor4()">0</button><br>
+                       <button type="button" class="btn" id="btn14" onclick="ChangeColor4()">1</button><br>
+                       <button type="button" class="btn" id="btn15" onclick="ChangeColor4()">False</button><br>
+                       <button type="button" class="btn" id="btn16" onclick="ChangeColor4()">True</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    How to round-off a value “5.77” to 6.0?
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn17" onclick="ChangeColor5()">round-off(5.77)</button><br>
+                       <button type="button" class="btn" id="btn18" onclick="ChangeColor5()">round-up(5.77)</button><br>
+                       <button type="button" class="btn" id="btn19" onclick="ChangeColor5()">ceil(5.77)</button><br>
+                       <button type="button" class="btn" id="btn20" onclick="ChangeColor5()">floor(5.77)</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    What value strcmp() function returns when two strings are the same?
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn29" onclick="ChangeColor8()">Error</button><br>
+                       <button type="button" class="btn" id="btn30" onclick="ChangeColor8()">1</button><br>
+                       <button type="button" class="btn" id="btn31" onclick="ChangeColor8()">2</button><br>
+                       <button type="button" class="btn" id="btn32" onclick="ChangeColor8()">0</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    The library function strrchr() finds the first occurrence of a substring in another string.
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn33" onclick="ChangeColor9()">Strstr()</button><br>
+                       <button type="button" class="btn" id="btn34" onclick="ChangeColor9()">Yes</button><br>
+                       <button type="button" class="btn" id="btn35" onclick="ChangeColor9()">strchr()</button><br>
+                       <button type="button" class="btn" id="btn36" onclick="ChangeColor9()">strnset()</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    In the context of C data types, which of the followings is correct?
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn  box10" id="btn37" onclick="ChangeColor10()">A), B) and C) all are valid data types</button><br>
+                       <button type="button" class="btn  box10" id="btn38" onclick="ChangeColor10()">“unsigned long double” is a valid data type</button><br>
+                       <button type="button" class="btn  box10" id="btn39" onclick="ChangeColor10()">“long long double” is a valid data type.</button><br>
+                       <button type="button" class="btn  box10" id="btn40" onclick="ChangeColor10()">“unsigned long long int” is a valid data type</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            
+
+
+            <div class="card">
+                <div class="imgBx">
+                    Which header file can be used to define input/output function prototypes and macros?
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn21" onclick="ChangeColor6()">math.h</button><br>
+                       <button type="button" class="btn" id="btn22" onclick="ChangeColor6()">memory.h</button><br>
+                       <button type="button" class="btn" id="btn23" onclick="ChangeColor6()">stdio.h</button><br>
+                       <button type="button" class="btn" id="btn24" onclick="ChangeColor6()">dos.h</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="imgBx">
+                    Why to use fflush() library function?
+                </div>
+                <div class="content">
+                    <p>
+                       <button type="button" class="btn" id="btn25" onclick="ChangeColor7()">To flush only specified stream </button><br>
+                       <button type="button" class="btn" id="btn26" onclick="ChangeColor7()">To flush all streams and specified streams</button><br>
+                       <button type="button" class="btn" id="btn27" onclick="ChangeColor7()">To flush input/output buffer</button><br>
+                       <button type="button" class="btn" id="btn28" onclick="ChangeColor7()">Invalid library function</button>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+           
+
+            
+
+            <script src="../JS/CQuiz.js"></script>
+        </div>
+        
+    </body>
+</html>
